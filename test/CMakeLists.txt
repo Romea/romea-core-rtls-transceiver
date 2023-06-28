@@ -13,4 +13,4 @@ add_test(transceiver_ranging_result ${PROJECT_NAME}_test_transceiver_ranging_res
 add_executable(${PROJECT_NAME}_test_transceiver_ranging_status test_transceiver_ranging_status.cpp )
 target_link_libraries(${PROJECT_NAME}_test_transceiver_ranging_status ${PROJECT_NAME} GTest::GTest GTest::Main)
 target_compile_options(${PROJECT_NAME}_test_transceiver_ranging_status PRIVATE -std=c++17)
-add_test(transceiver_ranging_status ${PROJECT_NAME}_test_transceiver_ranging_statut)
+add_test(transceiver_ranging_status ${PROJECT_NAME}_test_transceiver_ranging_status)
