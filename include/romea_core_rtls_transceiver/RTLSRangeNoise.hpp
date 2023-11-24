@@ -18,6 +18,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 class RTLSRangeNoise
 {
@@ -35,6 +37,7 @@ private:
   double b_;
 };
 
+}  // namespace core
 }  // namespace romea
 
 #endif  // ROMEA_CORE_RTLS__RTLSRANGENOISE_HPP_

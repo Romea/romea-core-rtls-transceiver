@@ -20,6 +20,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 bool isEmpty(const RTLSTransceiverRangingResult & result)
 {
@@ -28,4 +30,5 @@ bool isEmpty(const RTLSTransceiverRangingResult & result)
          result.totalRxPowerLevel == 0;
 }
 
+}  // namespace core
 }  // namespace romea

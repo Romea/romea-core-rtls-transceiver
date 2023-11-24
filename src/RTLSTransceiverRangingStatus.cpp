@@ -20,6 +20,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 
 //-----------------------------------------------------------------------------
@@ -51,4 +53,5 @@ RTLSTransceiverRangingStatus RTLSTransceiverRangingStatusEvaluator::evaluate(
 }
 
 
+}  // namespace core
 }  // namespace romea

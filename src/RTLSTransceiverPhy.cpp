@@ -20,6 +20,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 //-----------------------------------------------------------------------------
 RTLSTransceiverPhy::RTLSTransceiverPhy(
@@ -101,4 +103,5 @@ bool operator!=(const RTLSTransceiverPhy & phy1, const RTLSTransceiverPhy & phy2
   return !(phy1 == phy2);
 }
 
+}  // namespace core
 }  // namespace romea

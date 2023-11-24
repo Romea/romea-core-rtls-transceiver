@@ -20,6 +20,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 enum class RTLSTransceiverFunction
 {
@@ -33,6 +35,7 @@ RTLSTransceiverFunction stringToFunction(const std::string & function);
 
 std::string functionToString(const RTLSTransceiverFunction & function);
 
+}  // namespace core
 }  // namespace romea
 
 #endif  // ROMEA_CORE_RTLS__RTLSTRANSCEIVERFUNCTION_HPP_

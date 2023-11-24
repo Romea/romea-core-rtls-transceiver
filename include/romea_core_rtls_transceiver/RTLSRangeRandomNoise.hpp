@@ -25,6 +25,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 class RTLSRangeRandomNoise : public RTLSRangeNoise
 {
@@ -43,6 +45,7 @@ private:
   std::normal_distribution<double> dist_;
 };
 
+}  // namespace core
 }  // namespace romea
 
 #endif  // ROMEA_CORE_RTLS__RTLSRANGERANDOMNOISE_HPP

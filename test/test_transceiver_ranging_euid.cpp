@@ -22,9 +22,9 @@
 
 TEST(TestTransceiverEUID, checkEqualOperator)
 {
-  romea::RTLSTransceiverEUID euid1{1, 1};
-  romea::RTLSTransceiverEUID euid2{1, 2};
-  romea::RTLSTransceiverEUID euid3{2, 1};
+  romea::core::RTLSTransceiverEUID euid1{1, 1};
+  romea::core::RTLSTransceiverEUID euid2{1, 2};
+  romea::core::RTLSTransceiverEUID euid3{2, 1};
 
   EXPECT_TRUE(euid1 == euid1);
   EXPECT_FALSE(euid1 == euid2);
@@ -33,10 +33,10 @@ TEST(TestTransceiverEUID, checkEqualOperator)
 
 TEST(TestTransceiverEUID, checkLowerThanOperator)
 {
-  romea::RTLSTransceiverEUID euid00{0, 0};
-  romea::RTLSTransceiverEUID euid01{0, 1};
-  romea::RTLSTransceiverEUID euid10{1, 0};
-  romea::RTLSTransceiverEUID euid11{1, 1};
+  romea::core::RTLSTransceiverEUID euid00{0, 0};
+  romea::core::RTLSTransceiverEUID euid01{0, 1};
+  romea::core::RTLSTransceiverEUID euid10{1, 0};
+  romea::core::RTLSTransceiverEUID euid11{1, 1};
 
   EXPECT_TRUE(euid00 < euid01);
   EXPECT_TRUE(euid01 < euid10);

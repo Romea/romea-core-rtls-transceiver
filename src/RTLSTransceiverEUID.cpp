@@ -17,6 +17,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 //-----------------------------------------------------------------------------
 bool operator==(
@@ -34,4 +36,5 @@ bool operator<(
   return euid1.pan_id * 65535 + euid1.id < euid2.pan_id * 65535 + euid2.id;
 }
 
+}  // namespace core
 }  // namespace romea

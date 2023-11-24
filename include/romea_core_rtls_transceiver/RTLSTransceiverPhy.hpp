@@ -18,6 +18,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 class RTLSTransceiverPhy
 {
@@ -60,6 +62,7 @@ bool operator==(const RTLSTransceiverPhy & phy1, const RTLSTransceiverPhy & phy2
 
 bool operator!=(const RTLSTransceiverPhy & phy1, const RTLSTransceiverPhy & phy2);
 
+}  // namespace core
 }  // namespace romea
 
 #endif  // ROMEA_CORE_RTLS__RTLSTRANSCEIVERPHY_HPP_

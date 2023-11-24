@@ -22,21 +22,21 @@
 
 TEST(TestTransceiverRangingResult, checkEmptyResult)
 {
-  romea::RTLSTransceiverRangingResult result;
+  romea::core::RTLSTransceiverRangingResult result;
   result.range = 0.;
   result.firstPathRxPowerLevel = 0;
   result.totalRxPowerLevel = 0;
 
-  EXPECT_TRUE(romea::isEmpty(result));
+  EXPECT_TRUE(romea::core::isEmpty(result));
 }
 
 TEST(TestTransceiverRangingResult, testNotEmptyResult)
 {
-  romea::RTLSTransceiverRangingResult result;
+  romea::core::RTLSTransceiverRangingResult result;
   result.range = 10.0;
   result.firstPathRxPowerLevel = 10;
   result.totalRxPowerLevel = 20;
-  EXPECT_FALSE(romea::isEmpty(result));
+  EXPECT_FALSE(romea::core::isEmpty(result));
 }
 
 //-----------------------------------------------------------------------------

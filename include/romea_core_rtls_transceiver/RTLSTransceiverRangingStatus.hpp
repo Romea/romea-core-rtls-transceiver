@@ -21,6 +21,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 enum class RTLSTransceiverRangingStatus
 {
@@ -46,6 +48,7 @@ private:
   uint8_t rxPowerRejectionThreshold_;
 };
 
+}  // namespace core
 }  // namespace romea
 
 

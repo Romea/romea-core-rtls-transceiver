@@ -19,6 +19,9 @@
 
 namespace romea
 {
+namespace core
+{
+
 struct RTLSTransceiverEUID
 {
   uint16_t pan_id;
@@ -33,6 +36,7 @@ bool operator<(
   const RTLSTransceiverEUID & euid1,
   const RTLSTransceiverEUID & euid2);
 
+}  // namespace core
 }  // namespace romea
 
 #endif  // ROMEA_CORE_RTLS__RTLSTRANSCEIVEREUID_HPP_

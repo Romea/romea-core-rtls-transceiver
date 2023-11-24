@@ -17,6 +17,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 //-----------------------------------------------------------------------------
 RTLSTransceiverFunction stringToFunction(const std::string & function)
@@ -48,4 +50,5 @@ std::string functionToString(const RTLSTransceiverFunction & function)
   }
 }
 
+}  // namespace core
 }  // namespace romea

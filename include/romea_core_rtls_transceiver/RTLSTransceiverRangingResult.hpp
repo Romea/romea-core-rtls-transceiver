@@ -21,6 +21,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 struct RTLSTransceiverRangingResult
 {
@@ -32,6 +34,7 @@ struct RTLSTransceiverRangingResult
 
 bool isEmpty(const RTLSTransceiverRangingResult & result);
 
+}  // namespace core
 }  // namespace romea
 
 

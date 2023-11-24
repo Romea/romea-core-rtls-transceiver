@@ -17,6 +17,8 @@
 
 namespace romea
 {
+namespace core
+{
 
 
 //-----------------------------------------------------------------------------
@@ -41,4 +43,5 @@ double RTLSRangeNoise::computeStd(const double & range)
   return a_ * range + b_;
 }
 
+}  // namespace core
 }  // namespace romea

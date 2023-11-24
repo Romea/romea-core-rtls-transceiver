@@ -26,55 +26,65 @@ protected:
   : ranging_status_(0.5, 20.0, 20)
   {}
 
-  romea::RTLSTransceiverRangingStatusEvaluator ranging_status_;
+  romea::core::RTLSTransceiverRangingStatusEvaluator ranging_status_;
 };
 
 
 TEST_F(TestTransceiverRangingStatus, checkRangingIsFailed)
 {
-  romea::RTLSTransceiverRangingResult result;
+  romea::core::RTLSTransceiverRangingResult result;
   result.range = 0.;
   result.firstPathRxPowerLevel = 0;
   result.totalRxPowerLevel = 0;
 
-  EXPECT_TRUE(ranging_status_.evaluate(result) == romea::RTLSTransceiverRangingStatus::FAILED);
+  EXPECT_TRUE(
+    ranging_status_.evaluate(result) ==
+    romea::core::RTLSTransceiverRangingStatus::FAILED);
 }
 
 TEST_F(TestTransceiverRangingStatus, checkRangingIsUnavailableWhenRangeIsLowerThanMinimalRange)
 {
-  romea::RTLSTransceiverRangingResult result;
+  romea::core::RTLSTransceiverRangingResult result;
   result.range = 0.2;
   result.firstPathRxPowerLevel = 8;
   result.totalRxPowerLevel = 10;
 
-  EXPECT_TRUE(ranging_status_.evaluate(result) == romea::RTLSTransceiverRangingStatus::UNAVAILABLE);
+  EXPECT_TRUE(
+    ranging_status_.evaluate(result) ==
+    romea::core::RTLSTransceiverRangingStatus::UNAVAILABLE);
 }
 
 TEST_F(TestTransceiverRangingStatus, checkRangingIsUnavailableWhenRangeIsHigherThanMaximalRange)
 {
-  romea::RTLSTransceiverRangingResult result;
+  romea::core::RTLSTransceiverRangingResult result;
   result.range = 22.;
   result.firstPathRxPowerLevel = 8;
   result.totalRxPowerLevel = 10;
-  EXPECT_TRUE(ranging_status_.evaluate(result) == romea::RTLSTransceiverRangingStatus::UNAVAILABLE);
+  EXPECT_TRUE(
+    ranging_status_.evaluate(result) ==
+    romea::core::RTLSTransceiverRangingStatus::UNAVAILABLE);
 }
 
 TEST_F(TestTransceiverRangingStatus, checkRangingIsUnavailableWhenFirstPathRxPowerLevelIsTooLow)
 {
-  romea::RTLSTransceiverRangingResult result;
+  romea::core::RTLSTransceiverRangingResult result;
   result.range = 10.;
   result.firstPathRxPowerLevel = 5;
   result.totalRxPowerLevel = 30;
-  EXPECT_TRUE(ranging_status_.evaluate(result) == romea::RTLSTransceiverRangingStatus::UNAVAILABLE);
+  EXPECT_TRUE(
+    ranging_status_.evaluate(result) ==
+    romea::core::RTLSTransceiverRangingStatus::UNAVAILABLE);
 }
 
 TEST_F(TestTransceiverRangingStatus, checkIsAvailable)
 {
-  romea::RTLSTransceiverRangingResult result;
+  romea::core::RTLSTransceiverRangingResult result;
   result.range = 10.;
   result.firstPathRxPowerLevel = 28;
   result.totalRxPowerLevel = 30;
-  EXPECT_TRUE(ranging_status_.evaluate(result) == romea::RTLSTransceiverRangingStatus::AVAILABLE);
+  EXPECT_TRUE(
+    ranging_status_.evaluate(result) ==
+    romea::core::RTLSTransceiverRangingStatus::AVAILABLE);
 }
 
 //-----------------------------------------------------------------------------
