@@ -13,6 +13,10 @@
 // limitations under the License.
 
 
+// std
+#include <string>
+
+// romea
 #include "romea_core_rtls_transceiver/RTLSTransceiverFunction.hpp"
 
 namespace romea

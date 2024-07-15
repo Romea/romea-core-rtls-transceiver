@@ -13,8 +13,8 @@
 // limitations under the License.
 
 
-#ifndef ROMEA_CORE_RTLS__RTLSRANGENOISE_HPP_
-#define ROMEA_CORE_RTLS__RTLSRANGENOISE_HPP_
+#ifndef ROMEA_CORE_RTLS_TRANSCEIVER__RTLSRANGENOISE_HPP_
+#define ROMEA_CORE_RTLS_TRANSCEIVER__RTLSRANGENOISE_HPP_
 
 namespace romea
 {
@@ -40,4 +40,4 @@ private:
 }  // namespace core
 }  // namespace romea
 
-#endif  // ROMEA_CORE_RTLS__RTLSRANGENOISE_HPP_
+#endif  // ROMEA_CORE_RTLS_TRANSCEIVER__RTLSRANGENOISE_HPP_

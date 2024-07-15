@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#ifndef ROMEA_CORE_RTLS__RTLSTRANSCEIVEREUID_HPP_
-#define ROMEA_CORE_RTLS__RTLSTRANSCEIVEREUID_HPP_
+#ifndef ROMEA_CORE_RTLS_TRANSCEIVER__RTLSTRANSCEIVEREUID_HPP_
+#define ROMEA_CORE_RTLS_TRANSCEIVER__RTLSTRANSCEIVEREUID_HPP_
 
 #include <cstdint>
 
@@ -39,4 +39,4 @@ bool operator<(
 }  // namespace core
 }  // namespace romea
 
-#endif  // ROMEA_CORE_RTLS__RTLSTRANSCEIVEREUID_HPP_
+#endif  // ROMEA_CORE_RTLS_TRANSCEIVER__RTLSTRANSCEIVEREUID_HPP_

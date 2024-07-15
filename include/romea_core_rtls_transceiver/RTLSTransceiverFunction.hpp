@@ -13,8 +13,8 @@
 // limitations under the License.
 
 
-#ifndef ROMEA_CORE_RTLS__RTLSTRANSCEIVERFUNCTION_HPP_
-#define ROMEA_CORE_RTLS__RTLSTRANSCEIVERFUNCTION_HPP_
+#ifndef ROMEA_CORE_RTLS_TRANSCEIVER__RTLSTRANSCEIVERFUNCTION_HPP_
+#define ROMEA_CORE_RTLS_TRANSCEIVER__RTLSTRANSCEIVERFUNCTION_HPP_
 
 #include <string>
 
@@ -38,4 +38,4 @@ std::string functionToString(const RTLSTransceiverFunction & function);
 }  // namespace core
 }  // namespace romea
 
-#endif  // ROMEA_CORE_RTLS__RTLSTRANSCEIVERFUNCTION_HPP_
+#endif  // ROMEA_CORE_RTLS_TRANSCEIVER__RTLSTRANSCEIVERFUNCTION_HPP_

@@ -13,8 +13,8 @@
 // limitations under the License.
 
 
-#ifndef ROMEA_CORE_RTLS__RTLSTRANSCEIVERPHY_HPP_
-#define ROMEA_CORE_RTLS__RTLSTRANSCEIVERPHY_HPP_
+#ifndef ROMEA_CORE_RTLS_TRANSCEIVER__RTLSTRANSCEIVERPHY_HPP_
+#define ROMEA_CORE_RTLS_TRANSCEIVER__RTLSTRANSCEIVERPHY_HPP_
 
 namespace romea
 {
@@ -65,4 +65,4 @@ bool operator!=(const RTLSTransceiverPhy & phy1, const RTLSTransceiverPhy & phy2
 }  // namespace core
 }  // namespace romea
 
-#endif  // ROMEA_CORE_RTLS__RTLSTRANSCEIVERPHY_HPP_
+#endif  // ROMEA_CORE_RTLS_TRANSCEIVER__RTLSTRANSCEIVERPHY_HPP_
