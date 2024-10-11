@@ -7,7 +7,7 @@ This library provides utilities for processing data coming from RTLS transceiver
 1. create a ROS workspace
 2. cd worskpace
 3. mkdir src
-4. wget https://raw.githubusercontent.com/Romea/romea-core-rtls_transceiver/refs/heads/main/romea_rtls_transceiver_public.repos
+4. wget https://raw.githubusercontent.com/Romea/romea-core-rtls-transceiver/refs/heads/main/romea_rtls_transceiver_public.repos
 5. vcs import src < romea_rtls_transceiver_public.repos
 6. build packages
    - catkin build for ROS1
@@ -33,8 +33,8 @@ This project is released under the Apache License 2.0. See the LICENSE file for 
 
 ## **Authors**
 
-The Romea Core IMU library was developed by **Jean Laneurit** in the context of various research projects carried out at INRAE.
+The Romea Core RTLS Transceiver library was developed by **Jean Laneurit** in the context of various research projects carried out at INRAE.
 
 ## **Contact**
 
-If you have any questions or comments about Romea Core RTLS Library library, please contact **[Jean Laneurit](mailto:jean.laneurit@inrae.fr)** 
+If you have any questions or comments about Romea Core RTLS Transceiver library, please contact **[Jean Laneurit](mailto:jean.laneurit@inrae.fr)** 
