@@ -1,6 +1,6 @@
-## ROMEA Core RTLS Transceiver Library
+# romea_core_rtls_transceiver
 
-This library provides utilities for processing data coming from RTLS transceivers as well as their configuration.
+This project is C++ library that provides utilities for processing data coming from RTLS transceivers as well as their configuration.
 
 ## **Usage**
 
@@ -33,8 +33,8 @@ This project is released under the Apache License 2.0. See the LICENSE file for 
 
 ## **Authors**
 
-The Romea Core RTLS Transceiver library was developed by **Jean Laneurit** in the context of various research projects carried out at INRAE.
+The romea_core_rtls_transceiverlibrary was developed by **Jean Laneurit** in the context of various research projects carried out at INRAE.
 
 ## **Contact**
 
-If you have any questions or comments about Romea Core RTLS Transceiver library, please contact **[Jean Laneurit](mailto:jean.laneurit@inrae.fr)** 
+If you have any questions or comments about romea_core_rtls_transceiver library, please contact **[Jean Laneurit](mailto:jean.laneurit@inrae.fr)** 
